@@ -1,4 +1,4 @@
-import 'package:drone_website/home.dart';
+import 'package:drone_website/home/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
