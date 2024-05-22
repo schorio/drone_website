@@ -1,3 +1,4 @@
+import 'package:drone_website/home/first_section/first_section.dart';
 import 'package:drone_website/home/header/header.dart';
 import 'package:drone_website/others/my_colors.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class Homepage extends StatelessWidget {
                 child: Column(
                   children: const [
                     Header(),
+                    FirstSection(),
                   ],
                 ),
               ),
