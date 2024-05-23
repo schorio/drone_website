@@ -98,7 +98,7 @@ class GetStarted extends StatelessWidget {
       'The Best View In The World From Your Site',
       style: TextStyle(
         fontSize: 100,
-        fontWeight: FontWeight.bold,
+        fontFamily: 'Montserrat_1',
         color: MyColors.white,
       ),
     );

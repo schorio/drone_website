@@ -15,9 +15,9 @@ class MenuWidget extends StatelessWidget {
           Text(
             'Services',
             style: TextStyle(
-              color: MyColors.white,
-              fontSize: 20,
-            ),
+                color: MyColors.white,
+                fontSize: 18,
+                fontFamily: 'Montserrat_2'),
           ),
           const SizedBox(width: 50),
           Row(
@@ -25,9 +25,9 @@ class MenuWidget extends StatelessWidget {
               Text(
                 'Pricing',
                 style: TextStyle(
-                  color: MyColors.white,
-                  fontSize: 20,
-                ),
+                    color: MyColors.white,
+                    fontSize: 18,
+                    fontFamily: 'Montserrat_2'),
               ),
               const SizedBox(width: 8),
               Icon(
@@ -41,25 +41,25 @@ class MenuWidget extends StatelessWidget {
           Text(
             'Drones',
             style: TextStyle(
-              color: MyColors.white,
-              fontSize: 20,
-            ),
+                color: MyColors.white,
+                fontSize: 18,
+                fontFamily: 'Montserrat_2'),
           ),
           const SizedBox(width: 50),
           Text(
             'Contact us',
             style: TextStyle(
-              color: MyColors.white,
-              fontSize: 20,
-            ),
+                color: MyColors.white,
+                fontSize: 18,
+                fontFamily: 'Montserrat_2'),
           ),
           const SizedBox(width: 50),
           Text(
             'About us',
             style: TextStyle(
-              color: MyColors.white,
-              fontSize: 20,
-            ),
+                color: MyColors.white,
+                fontSize: 18,
+                fontFamily: 'Montserrat_2'),
           ),
         ],
       ),
