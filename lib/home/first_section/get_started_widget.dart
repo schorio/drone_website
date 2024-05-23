@@ -9,22 +9,19 @@ class GetStarted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: InkWell(
-        onTap: () {},
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            grandTitre(),
-            const SizedBox(height: 40),
-            info(),
-            const SizedBox(height: 40),
-            Row(children: [
-              getStartedButton(),
-              const SizedBox(width: 10),
-              watchVideoButton(),
-            ])
-          ],
-        ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          grandTitre(),
+          const SizedBox(height: 40),
+          info(),
+          const SizedBox(height: 40),
+          Row(children: [
+            getStartedButton(),
+            const SizedBox(width: 10),
+            watchVideoButton(),
+          ])
+        ],
       ),
     );
   }
@@ -66,21 +63,24 @@ class GetStarted extends StatelessWidget {
     );
   }
 
-  Container getStartedButton() {
-    return Container(
-      padding: const EdgeInsets.symmetric(
-        vertical: 20,
-        horizontal: 50,
-      ),
-      decoration: BoxDecoration(
-        color: MyColors.white,
-        borderRadius: BorderRadius.circular(50),
-      ),
-      child: const Text(
-        'Get Started',
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.bold,
+  InkWell getStartedButton() {
+    return InkWell(
+      onTap: () {},
+      child: Container(
+        padding: const EdgeInsets.symmetric(
+          vertical: 20,
+          horizontal: 50,
+        ),
+        decoration: BoxDecoration(
+          color: MyColors.white,
+          borderRadius: BorderRadius.circular(50),
+        ),
+        child: const Text(
+          'Get Started',
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );
