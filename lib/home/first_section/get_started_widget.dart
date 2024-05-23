@@ -9,19 +9,22 @@ class GetStarted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          grandTitre(),
-          const SizedBox(height: 40),
-          info(),
-          const SizedBox(height: 40),
-          Row(children: [
-            getStartedButton(),
-            const SizedBox(width: 10),
-            watchVideoButton(),
-          ])
-        ],
+      child: InkWell(
+        onTap: () {},
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            grandTitre(),
+            const SizedBox(height: 40),
+            info(),
+            const SizedBox(height: 40),
+            Row(children: [
+              getStartedButton(),
+              const SizedBox(width: 10),
+              watchVideoButton(),
+            ])
+          ],
+        ),
       ),
     );
   }
@@ -34,16 +37,19 @@ class GetStarted extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Container(
-            padding: const EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: MyColors.white,
-            ),
-            child: const Icon(
-              Icons.play_arrow,
-              color: Colors.black,
-              size: 30,
+          InkWell(
+            onTap: () {},
+            child: Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: MyColors.white,
+              ),
+              child: const Icon(
+                Icons.play_arrow,
+                color: Colors.black,
+                size: 30,
+              ),
             ),
           ),
           const SizedBox(width: 20),

@@ -10,37 +10,43 @@ class ButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          padding: const EdgeInsets.symmetric(
-            vertical: 20,
-            horizontal: 50,
-          ),
-          decoration: BoxDecoration(
-            color: MyColors.white,
-            borderRadius: BorderRadius.circular(50),
-          ),
-          child: const Text(
-            'Login',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+        InkWell(
+          onTap: () {},
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              vertical: 20,
+              horizontal: 50,
+            ),
+            decoration: BoxDecoration(
+              color: MyColors.white,
+              borderRadius: BorderRadius.circular(50),
+            ),
+            child: const Text(
+              'Login',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         ),
         const SizedBox(width: 20),
-        Container(
-          padding: const EdgeInsets.symmetric(
-            vertical: 20,
-            horizontal: 40,
-          ),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: MyColors.white)),
-          child: const Text(
-            'Register',
-            style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
+        InkWell(
+          onTap: () {},
+          child: Container(
+            padding: const EdgeInsets.symmetric(
+              vertical: 20,
+              horizontal: 40,
+            ),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                border: Border.all(color: MyColors.white)),
+            child: const Text(
+              'Register',
+              style: TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+              ),
             ),
           ),
         )
